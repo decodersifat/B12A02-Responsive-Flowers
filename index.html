@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
     <link rel="stylesheet" href="./main.css">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         @font-face {
             font-family: "Noto-sarif";
@@ -15,10 +14,7 @@
 
         @font-face {
             font-family: "Noto-Sans";
-            src: url("./fonts/Noto_Sans/static/NotoSans-Medium.ttf") format("truetype");
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
+            src: url("./fonts/Noto_Sans/static/NotoSans-Medium.ttf");
         }
 
         @layer base {
@@ -35,7 +31,7 @@
 </head>
 
 <body>
-    <header class="w-full">
+    <header class="w-full" id="Home">
         <nav class="flex justify-around items-center h-30">
             <div>
                 <a href="/">
@@ -43,8 +39,8 @@
                 </a>
             </div>
             <ul class="hidden md:flex gap-7 text-[.9rem] font-noto">
-                <li><a href="#">Home</a></li>
-                <li class="text-[#8987A1]"><a href="#">Shop</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li class="text-[#8987A1]"><a href="#Product">Shop</a></li>
                 <li class="text-[#8987A1]"><a href="#">About Us</a></li>
                 <li class="flex gap-x-2 items-center">
                     <img class="h-5" src="./assets/shopping-cart.png" alt="Shopping Cart">
@@ -60,7 +56,8 @@
 
     <main>
         <section id="hero-section" class="w-full mt-5 md:mt-38 px-4 h-auto">
-            <div class="flex flex-col-reverse gap-5 md:flex-row justify-around items-end md:px-44  w-full md:gap-2 h-full">
+            <div
+                class="flex flex-col-reverse gap-5 md:flex-row justify-around items-end md:px-44  w-full md:gap-2 h-full">
                 <div class="w-full md:w-1/2 mb-6  md:mb-0">
                     <h1 class="font-notosarif text-2xl md:text-5xl">
                         ALWAYS
@@ -79,6 +76,127 @@
                 </div>
             </div>
         </section>
+
+        <section id="Product" class="w-full md:px-40 px-4 mt-30">
+            <div class="w-full gap-y-5">
+                <div class="flex flex-col justify-center items-center text-center px-4 md:px-0">
+                    <h1 class="text-xl md:text-4xl font-notosarif mb-2">
+                        <span class="text-[#E95A08]">Our</span> Plants
+                    </h1>
+                    <p class="opacity-50 text-sm max-w-xl">
+                        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to exotic blooms, we offer a wide variety of fresh.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 w-full sm:grid-cols-2 md:grid-cols-4 gap-1 md:mt-6">
+                    <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                     <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+
+                     <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+
+                     <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+
+                     <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                     <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+
+                     <div class="md:w-[10.5rem] w-full bg-white rounded-xl p-6 md:p-2">
+                        <div class="text-center">
+                            <img src="./assets/sample-flower-image.png" alt="Plant"
+                                class="w-full h-52 mb-2 object-cover" />
+                            <h2 class="text-lg font-notosraif">Lily Blossom</h2>
+                            <p class="text-sm font-noto font-extrabold">20 USD</p>
+                            <button class="w-full font-bold font-noto p-1 mt-2 text-white bg-[#E95A08]">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
     </main>
 </body>
 
